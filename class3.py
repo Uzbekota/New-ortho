@@ -6,6 +6,9 @@ vertebra=int(input("Bo'yin umurtqalarining shakllanish bosqichini kiriting (1-6 
 overjet=int(input("Over Jet qiymatini kirirting: "))
 simptom=input("Bo'g'imda simptom bormi? (Ha yoki Yo'q): ")
 
+def yopish():
+    print("Kirgizilgan malumotlarni qayta tekshiring !")
+
 if condyle in ['Normal']:
     if S_Na==Go_Gn and SNA<82:
 
@@ -20,9 +23,9 @@ if condyle in ['Normal']:
                 print("Xirurgiya")
 
             else:
-                print("Kirgizilgan malumotlarni qayta tekshiring !")    
+                yopish()    
         else:
-            print("Kirgizilgan malumotlarni qayta tekshiring !")
+            yopish()
 
     elif S_Na<Go_Gn and SNA==82:
         if vertebra in [1,2,3,4]:
@@ -36,11 +39,11 @@ if condyle in ['Normal']:
                 print("Xirurgiya")
 
             else:
-                print("Kirgizilgan malumotlarni qayta tekshiring !")    
+                yopish()   
         else:
-            print("Kirgizilgan malumotlarni qayta tekshiring !")
+            yopish()
     else:
-        print("Kirgizilgan malumotlarni qayta tekshiring !")
+        yopish()
 
 elif condyle in ['Distal']:
     if S_Na==Go_Gn and SNA<82:
@@ -52,9 +55,9 @@ elif condyle in ['Distal']:
                 if overjet >=-4:
                     print("Komufulyaj")
                 else:
-                    print("Kirgizilgan malumotlarni qayta tekshiring !")
+                    yopish()
             else:
-                print("Kirgizilgan malumotlarni qayta tekshiring !")
+                yopish()
 
         elif simptom in ["Ha"]:
             if vertebra in [1,2,3,4]:
@@ -63,9 +66,9 @@ elif condyle in ['Distal']:
             elif vertebra in [5,6]:
                 print("CR, keyin xirurgiya")
             else:
-                print("Kirgizilgan malumotlarni qayta tekshiring !")
+                yopish()
         else:
-            print("Kirgizilgan malumotlarni qayta tekshiring !")
+            yopish()
 
     elif S_Na<Go_Gn and SNA==82:
         if simptom in["Yo'q"]:
@@ -76,9 +79,9 @@ elif condyle in ['Distal']:
                 if overjet >=-4:
                     print("Komufulyaj")
                 else:
-                    print("Kirgizilgan malumotlarni qayta tekshiring !")
+                    yopish()
             else:
-                print("Kirgizilgan malumotlarni qayta tekshiring !")
+                yopish()
 
         elif simptom in ["Ha"]:
             if vertebra in [1,2,3,4]:
@@ -87,12 +90,12 @@ elif condyle in ['Distal']:
             elif vertebra in [5,6]:
                 print("CR, keyin xirurgiya")
             else:
-                print("Kirgizilgan malumotlarni qayta tekshiring !")
+                yopish()
         else:
-            print("Kirgizilgan malumotlarni qayta tekshiring !")
+            yopish()
 
     else:
-        print("Kirgizilgan malumotlarni qayta tekshiring !")
+        yopish()
 
 else:
-    print("Kirgizilgan malumotlarni qayta tekshiring !")        
+    yopish()       
