@@ -4,6 +4,9 @@ Go_Gn=int(input("Gonion-Gnation qiymatini millimetrlarda kiriting: "))
 vertebra=int(input("Bo'yin umurtqalarining shakllanish bosqichini kiriting (1-6 gacha): "))
 overjet=int(input("Over Jet qiymatini kirirting: "))
 
+def yopish():
+    print("Kirgizilgan malumotlarni qayta tekshiring !")
+
 if condyle in ['Normal', S_Na>Go_Gn,]:
     if vertebra in [1,2,3,4]:
         print("Modifikatsiya")
@@ -15,9 +18,9 @@ if condyle in ['Normal', S_Na>Go_Gn,]:
         elif overjet >= 10:
             print("Xirurgiya")
         else:
-            print("Kirgizilgan malumotlarni qayta tekshiring !")
+            yopish()
     else:
-        print("Kirgizilgan malumotlarni qayta tekshiring !")    
+        yopish()    
 
 elif condyle in ['Distal']:
     if S_Na == Go_Gn:
@@ -34,10 +37,10 @@ elif condyle in ['Distal']:
             elif overjet>=10:
                 print("Xirurgiya")
             else:
-                print("Kirgizilgan malumotlarni qayta tekshiring !")   
+                yopish()   
         else:
-            print("Kirgizilgan malumotlarni qayta tekshiring !")        
+            yopish()        
     else:
-        print("Kirgizilgan malumotlarni qayta tekshiring !")
+        yopish()
 else:
-    print("Kirgizilgan malumotlarni qayta tekshiring !")
+    yopish()
