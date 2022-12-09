@@ -21,9 +21,7 @@ if (Mx-Mn < 5):
     else:
         print("Chok haqida malumot noto'g'ri malumot kiritildi")    
 
-
+elif tishx in ["Ha", "ha", "HA","Xa", "XA", "xa"]:
+    print("Dental expansion:\n>>> Misol uchun: Muligan yoyi")
 else:
-    if tishx in ["Ha", "ha", "HA","Xa", "XA", "xa"]:
-        print("Dental expansion:\n>>> Misol uchun: Muligan yoyi")
-    else:
-        print("Bemorda skeletal va dental cross bite yo'q.")    
+    print("Bemorda skeletal va dental cross bite yo'q.")    
