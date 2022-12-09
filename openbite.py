@@ -13,6 +13,7 @@ def umurtqa_bosqichi():
 def yopish():
     print("Kirgizilgan malumotlarni qayta tekshiring !")
 
+#ohoihoi[oiypoypoyhlkjgygugkufkyuk]
 
 if condyle in ['Normal' 'normal','Norma','norma']:
     if fma == 25 and 1< overbite <6:
